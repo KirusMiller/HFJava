@@ -10,18 +10,18 @@ public class GuessGame {
        p1 = new Player();
        p2 = new Player();
        p3 = new Player();
-       int guessp1 = 0;
+       int guessp1 = 0; // объявляем 3 переменных для хранения вариантов от каждого игрока
        int guessp2 = 0;
        int guessp3 = 0;
-       boolean p1isRight = false;
+       boolean p1isRight = false; // объявляем 3 переменных для хранения правильности или неправильности ответа
        boolean p2isRight = false;
        boolean p3isRight = false;
-       int targetNumber = (int) (Math.random() * 10);
+       int targetNumber = (int) (Math.random() * 10); // создаем число, которое нужно угадать
        System.out.println("I'm thinking of a number between 0 and 9...");
        while(true) {
            System.out.println("Number to guess is " + targetNumber);
            
-           p1.guess();
+           p1.guess(); // игроки делают попытку угадать число
            p2.guess();
            p3.guess();
            
