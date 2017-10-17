@@ -1,3 +1,4 @@
+package Boston;
 
 import java.util.Scanner;
 
